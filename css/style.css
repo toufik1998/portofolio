@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    direction: ltr;
+    font-family: 'Poppins', sans-serif;
+}
+.container-fluid{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    overflow-x: hidden;
+}
+ul{
+    padding: 0px;
+}
+
+/************** navbar************/
+.top-menu .navbar{
+    font-weight: bold;
+    padding: 0px 70px 0px 90px;
+    background-color: #fff !important;
+    box-shadow: 0px 3px 6px 3px rgb(0 0 0 / 6%);
+}
+nav.navbar .navbar-brand img{
+    width: 70%;
+}
+.top-menu .navbar .navbar-nav li a.nav-link{
+    color: #000;
+    font-size: 18px;
+    padding-left: 18px;
+}
+.top-menu .navbar .navbar-nav li.active a.nav-link{
+    color: #00B4D9;
+    border-bottom: 1px solid #00B4D9;
+}
+.top-menu .navbar .navbar-nav li a.nav-link:hover{
+    color: #00B4D9;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+}
+.top-menu .navbar button.navbar-toggler{
+    border-color: #00B4D9;
+}
+.top-menu .navbar button.navbar-toggler:focus{
+    outline: none;
+}
+.top-menu .navbar button.navbar-toggler span{
+    color: #00B4D9 !important;
+}
+/********************header******************/
+header{
+    background-image: url(../images/hero-area.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .content-header .overlay{
+    background: #0c0808;
+    opacity: 0.6;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+header .content-header .content{
+    color: #fff;
+    z-index: 1;
+    padding: 175px 0px 120px;
+}
+header .content-header .content h5{
+    font-size: 50px;
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: capitalize;
+}
+header .content-header .content h1{
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+}
+header .content-header .content p{
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: capitalize;
+    font-style: italic;
+}
+header .content-header .content ul li a{
+    display: block;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #000;
+    margin: 15px 12px 12px 6px;
+    background: #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+header .content-header .content ul li a.facebook:hover,
+header .content-header .content ul li a.facebook:focus{
+    background-color: #4F6AA3;
+    color: #fff;
+}
+header .content-header .content ul li a.twitter:hover,
+header .content-header .content ul li a.twitter:focus{
+    background-color: #4A9CEB;
+    color: #fff;
+}
+header .content-header .content ul li a.linkedin:hover,
+header .content-header .content ul li a.linkedin:focus{
+    background-color: #1260A2;
+    color: #fff;
+}
+header .content-header .content ul li a.insta:hover,
+header .content-header .content ul li a.insta:focus{
+    background-color: #D5274D;
+    color: #fff;
+}
+header .content-header .content ul li a.google:hover,
+header .content-header .content ul li a.google:focus{
+    background-color: #FE0000;
+    color: #fff;
+}
+header .content-header .content a.custom-btn{
+    background-color: #00b4d9;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 40px;
+    margin-right: 0px;
+}
+header .content-header .content a.custom-btn:hover,
+header .content-header .content a.custom-btn:focus{
+    background-color: #21CEF2;
+}
+/****** small navbar 200vh********************/
+/*nav.navbar.small-nav{
+    max-height: 58px;
+    z-index: 999999;
+    background-color: #fff;
+    box-shadow: 0px 3px 6px 3px rgb(0 0 0 / 6%);
+    top: 0 !important;
+}*/
+/*nav.navbar.small-nav .navbar-brand img{
+    width: 70%;
+}*/
+nav.navbar ul.navbar-nav li a.nav-link:hover, nav.navbar ul.navbar-nav li a.nav-link.active{
+    color: #00B4D9;
+    /*border-bottom: 1px solid #00B4D9;*/
+}
+/***************style of section about*************/
+.about{
+    background-color: #f0f0f0;
+    padding: 60px 0px 60px 0px;
+}
+.about .image img{
+    border: 10px solid #fff;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0px 0px 30px rgb(0 0 0 / 40%);
+
+}
+.about .brief-about-me{
+    padding: 50px 15px;
+}
+.about .brief-about-me h2{
+    color: #000;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.about .brief-about-me p{
+    line-height: 30px;
+    font-size: 14px;
+}
+.about .brief-about-me ul li{
+    margin-bottom: 10px;
+}
+.about .brief-about-me ul li .title-list {
+    color: #000;
+    text-transform: capitalize;
+    font-weight: bold;
+    width: 120px;
+    display:  inline-block;
+    position: relative;
+}
+.about .brief-about-me ul li .respond{
+    font-size: 15px;
+}
+.about .brief-about-me ul li .respond::before{
+    content: ":";
+    position: absolute;
+    left: 125px;
+    font-weight: bold;
+}
+.about .brief-about-me a{
+    color: white;
+    font-size: 14px;
+    margin-top: 20px;
+}
+.about .brief-about-me a i{
+    padding-right: 5px;
+}
+.about .brief-about-me a.custom-btn{
+    background-color: #00b4d9;
+    padding: 10px 30px 10px 30px;
+    margin-right: 5px;
+}
+.about .brief-about-me a.custom-btn:hover,
+.about .brief-about-me a.custom-btn:active,
+.about .brief-about-me a.custom-btn:focus{
+    background-color: #22CFF3;
+}
+.about .brief-about-me a.custom-btn-2{
+    background-color: #ec4646;
+    padding: 10px 30px 10px 30px;
+}
+.about .brief-about-me a.custom-btn-2:hover,
+.about .brief-about-me a.custom-btn-2:active,
+.about .brief-about-me a.custom-btn-2:focus{
+    background-color: #F55363;
+}   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************media Query navbar + header + section about*********/
+@media(max-width: 767px){
+    .top-menu .navbar {
+    font-weight: normal;
+    padding: 0px 40px 0px 5px;
+    background-color: #fff !important;
+}
+    .top-menu .navbar .navbar-nav li a.nav-link:hover{
+    background-color: #D5274D;        
+    }
+    header .content-header .content {
+        padding: 100px 0px 60px;
+    }
+    header .content-header .content h5 {
+        font-size: 40px;
+    }
+    header .content-header .content h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+}
+@media(max-width: 576px){
+    .top-menu .navbar{
+        padding: 0px 32px 0px 5px;
+    }
+    header .content-header .content p{
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 20px;
+    }
+    header .content-header .content a.custom-btn{
+        margin-right: 3px;
+    }
+    header .content-header .content ul li.list-inline-item:not(:last-child){
+        margin-right: -0.5rem;
+    }
+    .about .brief-about-me ul li .respond {
+        font-size: 13px;
+    }
+    .about .brief-about-me ul li .title-list{
+        font-size: 13px;
+    }
+
+}
