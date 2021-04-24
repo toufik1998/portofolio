@@ -169,7 +169,7 @@ nav.navbar ul.navbar-nav li a.nav-link:hover, nav.navbar ul.navbar-nav li a.nav-
 }
 /***************style of section about*************/
 .about{
-    background-color: #f0f0f0;
+    background-color: #fff;
     padding: 60px 0px 60px 0px;
 }
 .about .image img{
@@ -238,18 +238,159 @@ nav.navbar ul.navbar-nav li a.nav-link:hover, nav.navbar ul.navbar-nav li a.nav-
 .about .brief-about-me a.custom-btn-2:focus{
     background-color: #F55363;
 }   
-
-
-
-
-
-
-
-
-
-
-
-
+/********************* styling of section services********/
+.services{
+    background-color: #f0f0f0;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+.services .services-title h3{
+    color: #000;
+    font-weight: bold;
+    font-size: 35px;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+}
+.verification-card{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background-color: #fff;
+    width: 100%;
+    /*height: 100%;*/
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 30%);
+    margin-bottom: 20px;
+}
+.verification-card:hover{
+    box-shadow: 0px 0px 30px rgb(0 0 0 / 40%);
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+.verification-card .verification-card-image i{
+    color: #01B4D9;
+    padding-bottom: 40px;
+}
+.verification-card .verification-card-title a{
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+.verification-card .verification-card-title a:hover{
+    color: #01B4D9;
+}
+.verification-card .verification-card-body p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+}
+/****************styling of section resume****************/
+.resume{
+    background-color: #FFFFFF;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.resume .timelines .title-icon span{
+ /*   margin-left: -30px;*/
+    margin: -12px -35px;
+    background-color: #01B4D9;
+    color: #fff;
+    font-size: 20px;
+    line-height: 50px;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    text-align: center;
+}
+.resume .timelines .title-icon h4{
+    display: inline-block;
+    margin-left: 70px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+.resume .timelines .timelines-box .time-box{
+    background-color: #F2F2F2;
+    padding: 20px 20px 5px;
+    margin: 10px;
+   /* width: 100%;*/
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.resume .timelines .timelines-box .time-box h4{
+    font-size: 16px;
+    color:#383636 !important;
+    font-weight: bold;
+    text-transform: capitalize;
+    line-height: 22px;
+}
+.resume .timelines .timelines-box .time-box span{
+    color: #4b4a4a;
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+.resume .timelines .timelines-box .time-box p{
+    font-size: 14px;
+    color: #878585;
+    padding-top: 10px;
+}
+.resume .timelines ul{
+    position: relative;
+}
+.resume .timelines .timelines-box li::before{
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    border: 2px solid #00B4D9;
+    margin-left: -14px;
+    margin-top: 27px;
+    width: 10px;
+    height: 10px;
+    display: block;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.resume .timelines{
+    position: relative;
+}
+.resume .timelines::before{
+    content: "";
+    position: absolute;
+    width: 2px;
+    /*height: 100%;*/
+    top: 38px;
+    bottom: 0;
+    left: -10px;
+    background: #F2F2F2;
+}
 
 
 
@@ -259,27 +400,11 @@ nav.navbar ul.navbar-nav li a.nav-link:hover, nav.navbar ul.navbar-nav li a.nav-
 
 
 /************media Query navbar + header + section about*********/
-@media(max-width: 767px){
-    .top-menu .navbar {
-    font-weight: normal;
-    padding: 0px 40px 0px 5px;
-    background-color: #fff !important;
-}
-    .top-menu .navbar .navbar-nav li a.nav-link:hover{
-    background-color: #D5274D;        
-    }
-    header .content-header .content {
-        padding: 100px 0px 60px;
-    }
-    header .content-header .content h5 {
-        font-size: 40px;
-    }
-    header .content-header .content h1 {
-        font-size: 40px;
-        margin-bottom: 10px;
-    }
-}
 @media(max-width: 576px){
+    /*.container-fluid{
+        padding-right: 20px !important;
+        padding-left: 5px !important;
+    }*/
     .top-menu .navbar{
         padding: 0px 32px 0px 5px;
     }
@@ -300,5 +425,50 @@ nav.navbar ul.navbar-nav li a.nav-link:hover, nav.navbar ul.navbar-nav li a.nav-
     .about .brief-about-me ul li .title-list{
         font-size: 13px;
     }
+    .resume .timelines .timelines-box li::before{
+        margin-left: -9px;
+    }
+    .resume .timelines::before{
+        left: -5px;
+    }
+    .resume .timelines .title-icon span{
+        margin: -12px -10px;
+    }
+    .resume .timelines{
+        margin: 5px;
+    }
+}
 
+@media(max-width: 767px){
+    .top-menu .navbar {
+    font-weight: normal;
+    padding: 0px 40px 0px 5px;
+    background-color: #fff !important;
+    }
+    header .content-header .content {
+        padding: 100px 0px 60px;
+    }
+    header .content-header .content h5 {
+        font-size: 40px;
+    }
+    header .content-header .content h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    .resume .timelines{
+        margin: 14px;
+    }
+}
+
+@media(max-width: 991px){
+    .top-menu .navbar .navbar-nav li a.nav-link:hover,
+    .top-menu .navbar .navbar-nav li a.nav-link:focus,
+    .top-menu .navbar .navbar-nav li a.nav-link:active{
+    background-color: #f0f0f0;        
+    }
+}
+@media(min-width: 991px) and (max-width: 1020px){
+    .resume .timelines .title-icon span{
+        margin: -12px -20px;
+    }
 }
