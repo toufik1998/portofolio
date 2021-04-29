@@ -16,7 +16,7 @@ ul{
 /************** navbar************/
 .top-menu .navbar{
     font-weight: bold;
-    padding: 0px 70px 0px 90px;
+    padding: 5px 70px -1px 90px;
     background-color: #fff !important;
     box-shadow: 0px 3px 6px 3px rgb(0 0 0 / 6%);
 }
@@ -26,7 +26,7 @@ nav.navbar .navbar-brand img{
 .top-menu .navbar .navbar-nav li a.nav-link{
     color: #000;
     font-size: 18px;
-    padding-left: 18px;
+    padding-left: 25px;
 }
 .top-menu .navbar .navbar-nav li.active a.nav-link{
     color: #00B4D9;
@@ -51,7 +51,7 @@ nav.navbar .navbar-brand img{
 }
 /********************header******************/
 header{
-    background-image: url(../images/hero-area.jpg);
+    background-image: url(../images/bg3.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -152,20 +152,8 @@ header .content-header .content a.custom-btn:hover,
 header .content-header .content a.custom-btn:focus{
     background-color: #21CEF2;
 }
-/****** small navbar 200vh********************/
-/*nav.navbar.small-nav{
-    max-height: 58px;
-    z-index: 999999;
-    background-color: #fff;
-    box-shadow: 0px 3px 6px 3px rgb(0 0 0 / 6%);
-    top: 0 !important;
-}*/
-/*nav.navbar.small-nav .navbar-brand img{
-    width: 70%;
-}*/
 nav.navbar ul.navbar-nav li a.nav-link:hover, nav.navbar ul.navbar-nav li a.nav-link.active{
     color: #00B4D9;
-    /*border-bottom: 1px solid #00B4D9;*/
 }
 /***************style of section about*************/
 .about{
@@ -262,7 +250,6 @@ nav.navbar ul.navbar-nav li a.nav-link:hover, nav.navbar ul.navbar-nav li a.nav-
     -o-border-radius: 5px;
     background-color: #fff;
     width: 100%;
-    /*height: 100%;*/
     box-shadow: 0px 0px 10px rgb(0 0 0 / 30%);
     margin-bottom: 20px;
 }
@@ -306,7 +293,6 @@ nav.navbar ul.navbar-nav li a.nav-link:hover, nav.navbar ul.navbar-nav li a.nav-
     padding-bottom: 70px;
 }
 .resume .timelines .title-icon span{
- /*   margin-left: -30px;*/
     margin: -12px -35px;
     background-color: #01B4D9;
     color: #fff;
@@ -334,7 +320,6 @@ nav.navbar ul.navbar-nav li a.nav-link:hover, nav.navbar ul.navbar-nav li a.nav-
     background-color: #F2F2F2;
     padding: 20px 20px 5px;
     margin: 10px;
-   /* width: 100%;*/
     border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -385,12 +370,190 @@ nav.navbar ul.navbar-nav li a.nav-link:hover, nav.navbar ul.navbar-nav li a.nav-
     content: "";
     position: absolute;
     width: 2px;
-    /*height: 100%;*/
     top: 38px;
     bottom: 0;
     left: -10px;
     background: #F2F2F2;
 }
+/************ styling of section previos work*************/
+.work{
+    background-color: #F2F2F2;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.work h5{
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-bottom: 40px;
+    font-size: 35px;
+    color: #000;
+}
+
+.work .project{
+    position: relative;
+    margin-bottom: 20px;
+}
+.work .project .thumbnail{
+    position: absolute;
+    padding: 5px;
+    padding-bottom: 0px;
+    font-weight: bold;
+    top: 5px;
+    left: 0;
+    background-color: rgba(240, 240, 240, 0.75);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 5px 20px 0px #202020;
+}
+.work .project .project-content{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: rgba(65, 155, 155, 0.5);
+    min-width: 100%;
+    height: 100%;
+    display: none;
+}
+.work .project .project-content a{
+    position: absolute;
+    top: 40%;
+    left: 27%;
+    padding: 7px;
+
+}
+/*********** styling statistics****************/
+section.statistics{
+    background-image: url(../images/bg2.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+section.statistics .overlay{
+    background-color: rgba(0, 180, 217, 0.7);
+    padding: 150px 0px;
+}
+section.statistics .overlay .stat p{
+    font-size: 26px;
+    line-height: 30px;
+    margin-top: 30px;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+section.statistics .overlay .stat .circle canvas{
+    background-color: #eef6ff;
+    padding: 8px;
+    border-radius: 50%;
+}
+section.statistics .overlay .stat .circle{
+    position: relative;
+}
+section.statistics .overlay .stat .circle span{
+    font-size: 24px;
+    font-weight: bold;
+    color: #01B4D9;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+/*************** styling section contact**************/
+.contact{
+    padding-top: 60px;
+    padding-bottom: 10px;
+}
+.contact .container{
+    background: #fff;
+    box-shadow: 0 0 30px #ededed;
+    padding: 60px 40px;
+}
+.contact h5{
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-bottom: 40px;
+    font-size: 35px;
+    color: #000;
+}
+.contact .form form .form-group input,
+.contact .form form .form-group textarea{
+    font-size: 18px;
+    line-height: 35px;
+    border-radius: 3px;
+    border: 2px solid #f1f1f1;
+    color: #c2c2c2;
+    padding-left: 40px;
+}
+.contact .form form .form-group textarea{
+    min-height: 220px;
+    max-height: 220px;
+}
+.contact .form form .form-group{
+    position: relative;
+}
+.contact .form form .form-group::before{
+    font-size: 18px;
+    line-height: 25px;
+    position: absolute;
+    top: 8px;
+    left: 30px;
+    font-family: FontAwesome;
+    color: #00B4D9;
+    display: inline-block;
+}
+.contact .form form .form-group:first-of-type::before{
+    content: "\f007";
+}
+.contact .form form .form-group:nth-of-type(2)::before{
+    content: "\f0e0";
+}
+.contact .form form button{
+    font-size: 24px;
+    line-height: 25px;
+    color: #00B4D9;
+    background-color: #ffffff;
+    padding: 10px 70px;
+    border: 2px solid #00B4D9;
+    border-radius: 3px;
+    margin-left: 15px;
+}
+.contact form .error{
+    color: red;
+}
+.contact ul.contact-us li{
+    font-size: 16px;
+    line-height: 30px;
+    color: #00B4D9;
+}
+.contact ul{
+    padding: 0px;
+}
+.contact ul.social li a i{
+    background-color: #9bc8f5;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+.contact ul.social li a i:hover,
+.contact ul.social li a i:focus,
+.contact ul.social li a i:active{
+    background-color: #00B4D9;
+}
+footer .copyright p{
+    line-height: 77px;
+    background-color: #1C1C20;
+    color: #fff;
+    font-size: 16px;
+    text-transform: capitalize;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+
+
+
 
 
 
@@ -401,12 +564,20 @@ nav.navbar ul.navbar-nav li a.nav-link:hover, nav.navbar ul.navbar-nav li a.nav-
 
 /************media Query navbar + header + section about*********/
 @media(max-width: 576px){
-    /*.container-fluid{
-        padding-right: 20px !important;
-        padding-left: 5px !important;
-    }*/
-    .top-menu .navbar{
-        padding: 0px 32px 0px 5px;
+    nav.navbar .navbar-brand img {
+        width: 60%;
+    }
+    .top-menu .navbar button.navbar-toggler {
+        border-color: #fff;
+        position: absolute;
+        right: 5px;
+        top: 15px;
+    }
+    .top-menu .navbar .navbar-nav li a.nav-link {
+        color: #000;
+        font-size: 16px;
+        padding-left: 10px;
+        font-weight: normal;
     }
     header .content-header .content p{
         padding-left: 5px;
@@ -418,6 +589,32 @@ nav.navbar ul.navbar-nav li a.nav-link:hover, nav.navbar ul.navbar-nav li a.nav-
     }
     header .content-header .content ul li.list-inline-item:not(:last-child){
         margin-right: -0.5rem;
+    }
+    .about{
+        padding: 60px 0px 10px 0px;
+    }
+    .services{
+        padding-bottom: 40px;
+    }
+    .work h5{
+        font-size: 30px;
+    }
+    .contact {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .contact .form form button{
+        font-size: 20px;
+        line-height: 20px;
+        padding: 10px 91px;
+        margin-bottom: 15px;
+    }
+    .contact .container{
+        padding-bottom: 20px;
+    }
+    .resume{
+        padding-top: 40px;
+        padding-bottom: 30px;
     }
     .about .brief-about-me ul li .respond {
         font-size: 13px;
@@ -440,11 +637,6 @@ nav.navbar ul.navbar-nav li a.nav-link:hover, nav.navbar ul.navbar-nav li a.nav-
 }
 
 @media(max-width: 767px){
-    .top-menu .navbar {
-    font-weight: normal;
-    padding: 0px 40px 0px 5px;
-    background-color: #fff !important;
-    }
     header .content-header .content {
         padding: 100px 0px 60px;
     }
@@ -458,6 +650,10 @@ nav.navbar ul.navbar-nav li a.nav-link:hover, nav.navbar ul.navbar-nav li a.nav-
     .resume .timelines{
         margin: 14px;
     }
+    .work .project .project-content a{
+        padding: 10px;
+        left: 33%;
+    }
 }
 
 @media(max-width: 991px){
@@ -465,6 +661,9 @@ nav.navbar ul.navbar-nav li a.nav-link:hover, nav.navbar ul.navbar-nav li a.nav-
     .top-menu .navbar .navbar-nav li a.nav-link:focus,
     .top-menu .navbar .navbar-nav li a.nav-link:active{
     background-color: #f0f0f0;        
+    }
+    .work .project .project-content{
+        display: inline-block;
     }
 }
 @media(min-width: 991px) and (max-width: 1020px){
